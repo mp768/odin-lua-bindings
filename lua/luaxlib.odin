@@ -115,13 +115,13 @@ foreign lib {
     ** Generic Buffer manipulation
     */
     L_buffinit :: proc (L: ^State, B: ^L_Buffer) ---
-    L_prepbuffsize :: proc (B: ^L_Buffer, sz: c.size_t) -> cstring ---
+    L_prepbuffsize :: proc (B: ^L_Buffer, sz: c.size_t) -> ^c.char ---
     L_addlstring :: proc (B: ^L_Buffer, s: cstring, l: c.size_t) ---
     L_addstring :: proc (B: ^L_Buffer, s: cstring) ---
     L_addvalue :: proc (B: ^L_Buffer) ---
     L_pushresult :: proc (B: ^L_Buffer) ---
     L_pushresultsize :: proc (B: ^L_Buffer, sz: c.size_t) ---
-    L_buffinitsize :: proc (L: ^State, B: ^L_Buffer, sz: c.size_t) -> cstring ---
+    L_buffinitsize :: proc (L: ^State, B: ^L_Buffer, sz: c.size_t) -> ^c.char ---
 }
 
 /*
