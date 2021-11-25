@@ -1,1 +1,0 @@
-odin run test.odin -out:lua
