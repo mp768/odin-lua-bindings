@@ -1,6 +1,8 @@
 # odin-lua-bindings
 This is a set of bindings of the lua library for the lua programming language created for a programming language called "odin"
 
+@(Note): I've only tested this on windows.
+
 # how to use
 well simply all you need is the 'lua' folder and the lua library, and just import the package.
 The naming conventions stay the same, and just require the 'lua.' to access.
