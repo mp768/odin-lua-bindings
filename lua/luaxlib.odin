@@ -82,7 +82,7 @@ foreign lib {
     L_where :: proc(L: ^State, lvl: c.int) ---
     L_error :: proc(L: ^State, fmt: cstring, _: ..any) -> c.int ---
 
-    L_checkoption :: proc(L: ^State, arg: c.int, def: cstring, lst: []cstring) -> c.int ---
+    L_checkoption :: proc(L: ^State, arg: c.int, def: cstring, lst: [^]cstring) -> c.int ---
 
     L_fileresult :: proc(L: ^State, state: c.int, fname: cstring) -> c.int ---
     L_execresult :: proc(L: ^State, state: c.int) -> c.int ---
